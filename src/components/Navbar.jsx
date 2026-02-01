@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
 import "./Navbar.css";
+import { useContext } from "react";
+import { CartContext } from "../context/CartContext";
 
 const Navbar = () => {
-  const total = 25000;
+  const { total } = useContext(CartContext);
   const token = false;
   return (
     <div className="barra">
