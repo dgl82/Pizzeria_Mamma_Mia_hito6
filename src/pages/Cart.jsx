@@ -5,7 +5,7 @@ import { CartContext } from "../context/CartContext";
 
 const Cart = () => {
   // const [cart, setCart] = useState(pizzaCart);
-  const { cart, total } = useContext(CartContext);
+  const { cart, total, agregarPizza, quitarPizza } = useContext(CartContext);
 
   // const agregarPizza = (pizza) => {
   //   const nuevaPizza = [...cart];
